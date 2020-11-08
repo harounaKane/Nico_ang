@@ -8,12 +8,16 @@ import { Component, OnInit } from '@angular/core';
 export class MainComponent implements OnInit {
 
   user: string = "Harouna";
+  elements = [1, 2, 3, 4, 5];
+  color = true;
+  date = new Date();
 
   constructor() { }
 
   ngOnInit(): void {
   }
 
+  //fonction click
   userClick(){
     console.log("clicked");
     
