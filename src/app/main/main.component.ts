@@ -7,9 +7,16 @@ import { Component, OnInit } from '@angular/core';
 })
 export class MainComponent implements OnInit {
 
+  user: string = "Harouna";
+
   constructor() { }
 
   ngOnInit(): void {
+  }
+
+  userClick(){
+    console.log("clicked");
+    
   }
 
 }
