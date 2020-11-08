@@ -12,7 +12,7 @@
      <input [formControl]="userInput">
 </div>
 <div>Test : {{userInput.value}}</div> -->
-
+{{dateService.getDate() | date: "short"}}
 <!-- formGroup -->
 <form [formGroup]="userForm" class="w-50">
      <div class="form-group">

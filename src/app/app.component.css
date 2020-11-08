@@ -2,3 +2,7 @@
      font-weight: bolder;
      background-color: azure;
 }
+
+header a{
+     padding: 10px;
+}

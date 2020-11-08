@@ -1,3 +1,4 @@
+import { DateService } from './../date.service';
 import { Component, OnInit } from '@angular/core';
 import {FormGroup, FormControl } from '@angular/forms';
 
@@ -13,10 +14,15 @@ export class UserComponent implements OnInit {
     email: new FormControl(''),
   })
 
-  constructor() { }
+  dateService: DateService;
+
+  constructor(dateService: DateService ) { 
+    this.dateService = dateService;
+  }
 
   ngOnInit(): void {
   }
+
   showForm(){
     console.log(this.userForm);
   }
