@@ -8,7 +8,21 @@
 
 
 <!-- FormControl -->
-<div>
+<!-- <div>
      <input [formControl]="userInput">
 </div>
-<div>Test : {{userInput.value}}</div>
+<div>Test : {{userInput.value}}</div> -->
+
+<!-- formGroup -->
+<form [formGroup]="userForm" class="w-50">
+     <div class="form-group">
+          <label>Nom</label>
+          <input fomrControlName="name" class="form-control">
+     </div>
+     <div class="form-group">
+          <label>Mail</label>
+          <input fomrControlName="email" class="form-control">
+     </div>
+     <!-- <input type="submit" (click)="showForm()"> -->
+     <button (click)="showForm()">Envoyer</button>
+</form>

@@ -24,7 +24,7 @@ const routes: Routes = [
     BrowserModule,
     //AppRoutingModule => "devient" = RouterModule
     RouterModule.forRoot(routes),
-    FormsModule,
+    // FormsModule,
     ReactiveFormsModule
   ],
   providers: [],
