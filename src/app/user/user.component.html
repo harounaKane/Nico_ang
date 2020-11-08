@@ -1,6 +1,14 @@
 <p>user works!</p>
 
-<div>
+<!-- ngModel -->
+<!-- <div>
      <input [(ngModel)]="userInput">
 </div>
-<div>Test : {{userInput}}</div>
+<div>Test : {{userInput}}</div> -->
+
+
+<!-- FormControl -->
+<div>
+     <input [formControl]="userInput">
+</div>
+<div>Test : {{userInput.value}}</div>
