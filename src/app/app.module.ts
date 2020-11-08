@@ -10,7 +10,7 @@ import { UserComponent } from './user/user.component';
 // création de route
 const routes: Routes = [
   {path: "user", component: UserComponent},
-  {path: "", component: MainComponent}
+  {path: "home", component: MainComponent}
 ];
 
 @NgModule({
@@ -21,7 +21,7 @@ const routes: Routes = [
   ],
   imports: [
     BrowserModule,
-    //AppRoutingModule "devient"
+    //AppRoutingModule => "devient" = RouterModule
     RouterModule.forRoot(routes)
   ],
   providers: [],
